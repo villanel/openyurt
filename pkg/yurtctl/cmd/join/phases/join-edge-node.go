@@ -38,9 +38,9 @@ import (
 	kubeletphase "k8s.io/kubernetes/cmd/kubeadm/app/phases/kubelet"
 	"k8s.io/kubernetes/cmd/kubeadm/app/util/apiclient"
 	kubeconfigutil "k8s.io/kubernetes/cmd/kubeadm/app/util/kubeconfig"
-	kubeletconfig "k8s.io/kubernetes/pkg/kubelet/apis/config"
-	kubeletscheme "k8s.io/kubernetes/pkg/kubelet/apis/config/scheme"
-	utilcodec "k8s.io/kubernetes/pkg/kubelet/kubeletconfig/util/codec"
+	kubeletconfig "github.com/openyurtio/openyurt/pkg/kubelet/apis/config"
+	kubeletscheme "github.com/openyurtio/openyurt/pkg/kubelet/apis/config/scheme"
+	utilcodec "github.com/openyurtio/openyurt/pkg/kubelet/kubeletconfig/util/codec"
 
 	"github.com/openyurtio/openyurt/pkg/yurtctl/constants"
 	"github.com/openyurtio/openyurt/pkg/yurtctl/util/edgenode"
